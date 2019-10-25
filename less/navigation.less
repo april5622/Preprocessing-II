@@ -1,1 +1,35 @@
 // Navigation Styles here
+
+header{
+    .display-flex(space-evenly, center);
+    border-bottom: 2px dashed @silver;
+    padding: 2% 0 2% 0;
+    width: 100%;
+
+    nav{
+        .display-flex(space-evenly, flex-end);
+        width: 30%;
+        font-size: 1.6rem;
+
+        a{
+        text-decoration: none;
+        color: @font-color;
+        }
+
+        @media @mobile{
+            width: 100%;
+            padding: 2%;
+            
+          } 
+
+    }
+
+    @media @mobile{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+  
+      }
+
+}
