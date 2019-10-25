@@ -1,21 +1,55 @@
 .home {
 
+  .intro-content{
+    padding-bottom: 2%;
+    border-bottom: 2px dashed @silver;
+    
+    @media @mobile{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 4%;
+
+    }
+
+    h2{
+      margin-top: 30px;
+
+    }
+  }
+
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
+    @media @mobile{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+    }
+
     
+
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @mobile{
+        width: 90%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+
+      @media @mobile{
+        width: 90%;
+      }
 
       img {
         border-radius: 10px;
@@ -27,14 +61,34 @@
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
 
+    @media @mobile{
+      width: 100%;
+      border-top: 2px dashed @silver;
+      border-bottom: 2px dashed @silver;
+      padding-top:30px;
+      display: flex;
+      flex-direction: column-reverse;
+      align-content: center;
+    }
+
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+
+      @media @mobile{
+        width: 90%;
+      }
+
     }
 
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+
+      @media @mobile{
+        width: 90%;
+
+      }
     }
   }
 
@@ -42,10 +96,18 @@
     width: 75%;
     margin: 0 auto 30px;
 
+    @media @mobile{
+      width: 90%;
+    }
+
     img {
       border-radius: 10px;
+
+      @media @mobile{
+        width: 100%;
     }
   }
+}
 
   .content-pick {
     padding-top: 30px;
@@ -53,9 +115,28 @@
     display: flex;
     justify-content: space-between;
 
+    @media @mobile {
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-top: 2px dashed @silver;
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
-    }
+
+      @media @mobile{
+        width: 75%;
+      }
+
+      .btn{
+        .custom-btn(@eastern-blue, @white);
+        
+        }
+      }
+    
   }
+
 }// home
